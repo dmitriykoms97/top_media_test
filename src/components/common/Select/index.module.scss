@@ -1,0 +1,51 @@
+.root {
+  position: relative;
+  & :global(.css-1f66vf8-container) {
+    &:focus-within {
+      & ~ .placeholder {
+        font: 11px/normal var(--rubik-light);
+        color: #6CEEC7;
+        top: 11px;
+      }
+    }
+  }
+  /*&:focus {
+      & .placeholder {
+        font: 11px/normal var(--rubik-light);
+        color: #6CEEC7;
+        top: 11px;
+      }
+  }*/
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+
+.placeholder {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font: 19px/normal var(--rubik-light);
+  color: #E0E0E0;
+  pointer-events: none;
+  transition: .3s linear;
+}
+
+.withValue {
+  font: 11px/normal var(--rubik-light);
+  color: #6CEEC7;
+  top: 11px;
+}
+
+.arrow{
+  transition: .3s;
+}
+.arrowReverted{
+  transform: rotate(180deg);
+}

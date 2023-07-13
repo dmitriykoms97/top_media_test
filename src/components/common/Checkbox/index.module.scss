@@ -1,0 +1,87 @@
+.checkboxWrapper {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+
+  &:hover {
+    & .customCheckbox {
+      background: #67D9B7;
+    }
+    a {
+      border-color: #FFFFFF;
+    }
+  }
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+
+  &:checked+.customCheckbox {
+    background: #67D9B7;
+    border: 1px solid #67D9B7;
+
+    &::after {
+      background: url('images/Vector.svg') no-repeat center;
+    }
+  }
+}
+
+.customCheckbox {
+  position: relative;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 11px;
+  border: 1px solid #67D9B7;
+  border-radius: 4px;
+  transition: .3s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 13px;
+  }
+}
+
+.text {
+  font: 15px/normal var(--rubik-light);
+  letter-spacing: 0.1px;
+  color: #E0E0E0;
+  max-width: 406px;
+  transition: .3s;
+
+  @media (max-width: 1280px) {
+    font: 15px/normal var(--rubik-light);
+  }
+
+  @media (max-width: 768px) {
+    font: 15px/normal var(--rubik-light);
+  }
+}
+
+.textFullWidth{
+  max-width: none;
+  width: 100%;
+}
+
+.error {
+  border: 1px solid #FF5C5C;
+}
+.errorText {
+  font: 11px/normal var(--rubik-light);
+  color: #FF5C5C;
+  position: absolute;
+  bottom: -17px;
+  left: 5px;
+}
+.disabled{
+  cursor: default;
+}

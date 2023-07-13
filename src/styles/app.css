@@ -1,0 +1,19 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+    box-sizing: border-box;
+}
+
+/* fonts */
+:root {
+    --rubik: 'Rubik', sans-serif;
+    --rubik-light: 'RubikLight', sans-serif;
+    --rubik-medium: 'RubikMedium', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}

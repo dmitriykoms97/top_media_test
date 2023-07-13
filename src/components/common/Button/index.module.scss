@@ -1,0 +1,16 @@
+.button {
+  color: #6CEEC7;
+  border: 1px solid #6CEEC7;
+  padding: 16px 47px 17px;
+  cursor: pointer;
+  background: none;
+  font: 19px/normal var(--rubik-medium);
+  border-radius: 5px;
+  max-width: 165px;
+  transition: .3s linear;
+
+  &:hover {
+    background: #6CEEC7;
+    color: #000000;
+  }
+}

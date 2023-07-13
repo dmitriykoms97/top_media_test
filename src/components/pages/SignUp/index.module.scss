@@ -1,0 +1,135 @@
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 100px 15px 60px;
+    height: auto;
+  }
+}
+
+.signUpFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 615px;
+}
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logInWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 31px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+}
+
+.logo {
+  margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.title {
+  font: 24px/normal var(--rubik-medium);
+  color: #FFFFFF;
+  margin-bottom: 55px;
+  text-align: center;
+  & > span {
+    color: #6CEEC7;
+  }
+
+  @media (max-width: 768px) {
+    font: 19px/normal var(--rubik-medium);
+    margin-bottom: 30px;
+  }
+}
+
+.logInText {
+  font: 15px/normal var(--rubik-light);
+  color: #E0E0E0;
+}
+
+.logIn {
+  text-decoration: none;
+  color: #6CEEC7;
+  cursor: pointer;
+  border-bottom: 1px solid #6CEEC7;
+}
+
+.termsLink {
+  color: #6CEEC7;
+  text-decoration: none;
+  border-bottom: 1px solid #6CEEC7;
+  transition: .3s linear;
+}
+
+.checkboxWrapper {
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
+
+.buttonWrapper {
+  @media (max-width: 768px) {
+    margin-top: 22px;
+  }
+}
+
+.mobileBg1 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 117px;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.mobileBg2 {
+  display: none;
+  position: fixed;
+  top: 5px;
+  right: 0;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.mobileBg3 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
